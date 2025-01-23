@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://adactinhotelapp.com/index.php"/>
+  <test thread-count="5" name="CheckInCheckOutPastDates(failed)">
+    <classes>
+      <class name="testclassnew.searchHotelPastCheckInCheckOutTest">
+        <methods>
+          <include name="validatePastDatesErrorMessages" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testclassnew.searchHotelPastCheckInCheckOutTest -->
+    </classes>
+  </test> <!-- CheckInCheckOutPastDates(failed) -->
+  <test thread-count="5" name="MoreNoofRoomsPriceValidation(failed)">
+    <classes>
+      <class name="testclassnew.selectHotelMoreRoomsPriceTest">
+        <methods>
+          <include name="MoreDaysTotalPriceofRoom"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testclassnew.selectHotelMoreRoomsPriceTest -->
+    </classes>
+  </test> <!-- MoreNoofRoomsPriceValidation(failed) -->
+  <test thread-count="5" name="ValidateBookAHotelPageFieldsandErrors(failed)">
+    <classes>
+      <class name="testclassnew.BookAHotelTest">
+        <methods>
+          <include name="validateNameInvalidinput" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testclassnew.BookAHotelTest -->
+    </classes>
+  </test> <!-- ValidateBookAHotelPageFieldsandErrors(failed) -->
+  <test thread-count="5" name="ValidateBookAHotelInvalidCCExpYear(failed)">
+    <classes>
+      <class name="testclassnew.BookAHotelInvalidCCYearTest">
+        <methods>
+          <include name="validateInvalidCCYearinput" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testclassnew.BookAHotelInvalidCCYearTest -->
+    </classes>
+  </test> <!-- ValidateBookAHotelInvalidCCExpYear(failed) -->
+  <test thread-count="5" name="BookConfirmationLastNameandRoomType(failed)">
+    <classes>
+      <class name="testclassnew.BookHotelConfirmationLastNameDisplayCheckTest">
+        <methods>
+          <include name="validateRoomType"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testclassnew.BookHotelConfirmationLastNameDisplayCheckTest -->
+    </classes>
+  </test> <!-- BookConfirmationLastNameandRoomType(failed) -->
+</suite> <!-- Failed suite [Suite] -->

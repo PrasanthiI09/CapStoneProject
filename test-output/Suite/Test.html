@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 23 14:11:26 GMT 2025</td>
+</tr>
+<tr><td>Total time:</td><td>39 seconds (39647 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testclassnew.selectHotelTest.validateSelectHotelPageFields()'><b>validateSelectHotelPageFields</b><br>Test class: testclassnew.selectHotelTest</td>
+<td></td>
+<td>2</td>
+<td>testclassnew.selectHotelTest@2f4948e4</td></tr>
+<tr>
+<td title='testclassnew.logInTest.validatelogIn()'><b>validatelogIn</b><br>Test class: testclassnew.logInTest<br>Parameters: igprasant, Shanthi@tcs</td>
+<td></td>
+<td>0</td>
+<td>testclassnew.logInTest@1165b38</td></tr>
+<tr>
+<td title='testclassnew.logInTest.validatelogIn()'><b>validatelogIn</b><br>Test class: testclassnew.logInTest<br>Parameters: igprasanthi, Shanthi@tcs1</td>
+<td></td>
+<td>11</td>
+<td>testclassnew.logInTest@1165b38</td></tr>
+<tr>
+<td title='testclassnew.BookAHotelErrorMessages.enterFNDetailsErrorMessages()'><b>enterFNDetailsErrorMessages</b><br>Test class: testclassnew.BookAHotelErrorMessages<br>Parameters: Natasha, Simha, , 2369874521478963, Other, October, 2019, 123, Please Enter your Address</td>
+<td></td>
+<td>1</td>
+<td>testclassnew.BookAHotelErrorMessages@1f2586d6</td></tr>
+<tr>
+<td title='testclassnew.BookAHotelErrorMessages.enterFNDetailsErrorMessages()'><b>enterFNDetailsErrorMessages</b><br>Test class: testclassnew.BookAHotelErrorMessages<br>Parameters: Natasha, Simha, 33,towers,, 2369874521478963, VISA, August, 2024, , Please Enter your Credit Card CVV Number</td>
+<td></td>
+<td>1</td>
+<td>testclassnew.BookAHotelErrorMessages@1f2586d6</td></tr>
+<tr>
+<td title='testclassnew.BookAHotelErrorMessages.enterFNDetailsErrorMessages()'><b>enterFNDetailsErrorMessages</b><br>Test class: testclassnew.BookAHotelErrorMessages<br>Parameters: Natasha, Simha, 33,towers,, 2569871, VISA, August, 2024, 345, Please Enter your 16 Digit Credit Card Number</td>
+<td></td>
+<td>1</td>
+<td>testclassnew.BookAHotelErrorMessages@1f2586d6</td></tr>
+<tr>
+<td title='testclassnew.BookAHotelErrorMessages.enterFNDetailsErrorMessages()'><b>enterFNDetailsErrorMessages</b><br>Test class: testclassnew.BookAHotelErrorMessages<br>Parameters: Natasha, , 1234,dfgh, 2369874521478963, American Express, February, 2018, 1234, Please Enter you Last Name</td>
+<td></td>
+<td>1</td>
+<td>testclassnew.BookAHotelErrorMessages@1f2586d6</td></tr>
+<tr>
+<td title='testclassnew.searchHotelOneValidInputTest.validateOneValidInput()'><b>validateOneValidInput</b><br>Test class: testclassnew.searchHotelOneValidInputTest<br>Parameters: London, Hotel Sunshine, Standard, 1 - One, 24/05/2025, 25/05/2025, 1 - One, </td>
+<td></td>
+<td>2</td>
+<td>testclassnew.searchHotelOneValidInputTest@6a78afa0</td></tr>
+<tr>
+<td title='testclassnew.BookAHotelErrorMessages.enterFNDetailsErrorMessages()'><b>enterFNDetailsErrorMessages</b><br>Test class: testclassnew.BookAHotelErrorMessages<br>Parameters: Natasha, Simha, 33,towers,, 2369874521478963, American Express, - Select Month -, 2018, 2345, Please Select your Credit Card Expiry Month</td>
+<td></td>
+<td>1</td>
+<td>testclassnew.BookAHotelErrorMessages@1f2586d6</td></tr>
+<tr>
+<td title='testclassnew.BookAHotelErrorMessages.enterFNDetailsErrorMessages()'><b>enterFNDetailsErrorMessages</b><br>Test class: testclassnew.BookAHotelErrorMessages<br>Parameters: , Simha, 1234,dfgh, 2369874521478963, American Express, February, 2018, 1234, Please Enter your First Name</td>
+<td></td>
+<td>1</td>
+<td>testclassnew.BookAHotelErrorMessages@1f2586d6</td></tr>
+<tr>
+<td title='testclassnew.logInTest.validatelogIn()'><b>validatelogIn</b><br>Test class: testclassnew.logInTest<br>Parameters: igprasanthi, </td>
+<td></td>
+<td>0</td>
+<td>testclassnew.logInTest@1165b38</td></tr>
+<tr>
+<td title='testclassnew.BookAHotelErrorMessages.enterFNDetailsErrorMessages()'><b>enterFNDetailsErrorMessages</b><br>Test class: testclassnew.BookAHotelErrorMessages<br>Parameters: Natasha, Simha, 1234,dfgh, , American Express, February, 2018, 2345, Please Enter your 16 Digit Credit Card Number</td>
+<td></td>
+<td>1</td>
+<td>testclassnew.BookAHotelErrorMessages@1f2586d6</td></tr>
+<tr>
+<td title='testclassnew.BookAHotelErrorMessages.enterFNDetailsErrorMessages()'><b>enterFNDetailsErrorMessages</b><br>Test class: testclassnew.BookAHotelErrorMessages<br>Parameters: Natasha, Simha, 1234,dfgh, 2369874521478963, - Select Credit Card Type -, February, 2018, 2345, Please Select your Credit Card Type</td>
+<td></td>
+<td>1</td>
+<td>testclassnew.BookAHotelErrorMessages@1f2586d6</td></tr>
+<tr>
+<td title='testclassnew.BookAHotelErrorMessages.enterFNDetailsErrorMessages()'><b>enterFNDetailsErrorMessages</b><br>Test class: testclassnew.BookAHotelErrorMessages<br>Parameters: Natasha, Simha, 33,towers,, 2369874521478963, VISA, August, - Select Year -, 345, Please Select your Credit Card Expiry Year</td>
+<td></td>
+<td>1</td>
+<td>testclassnew.BookAHotelErrorMessages@1f2586d6</td></tr>
+<tr>
+<td title='testclassnew.logInTest.validatelogIn()'><b>validatelogIn</b><br>Test class: testclassnew.logInTest<br>Parameters: , Shanthi@tcs</td>
+<td></td>
+<td>0</td>
+<td>testclassnew.logInTest@1165b38</td></tr>
+</table><p>
+</body>
+</html>

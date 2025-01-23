@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browser" value="chrome"></parameter>
+    <parameter name="url" value="https://adactinhotelapp.com/index.php"></parameter>
+     <test thread-count="5" name = "CheckInCheckOutPastDates">
+  <classes>
+     <class name = "testclassnew.logInTest"/>
+     <class name = "testclassnew.searchHotelPastCheckInCheckOutTest"/>
+     </classes>
+  </test>
+  
+  <test thread-count="5" name = "MoreNoofDaysPriceValidation">
+  <classes>
+     <class name = "testclassnew.logInTest"/>
+     <class name = "testclassnew.searchHotelMoreDaysTest"/>
+     <class name = "testclassnew.selectHotelMoreDaysPriceTest"/>
+     </classes>
+  </test>
+  <test thread-count="5" name = "MoreNoofRoomsPriceValidation">
+  <classes>
+     <class name = "testclassnew.logInTest"/>
+     <class name = "testclassnew.searchHotelMoreRoomsPriceTest"/>
+     <class name = "testclassnew.selectHotelMoreRoomsPriceTest"/>
+     </classes>
+  </test>
+  
+  <test thread-count="5" name = "SearchHotelErrorsandalldataValidation">
+  <classes>
+     <class name = "testclassnew.logInTest"/>
+     <class name = "testclassnew.searchHotelTest"/>
+    </classes>
+  </test>
+  <test thread-count="5" name = "ValidateBookAHotelPageFieldsandErrors">
+  <classes>
+     <class name = "testclassnew.logInTest"/>
+      <class name="testclassnew.searchHotelOneValidInputTest"/>
+      <class name = "testclassnew.selectHotelTest"/>
+      <class name = "testclassnew.BookAHotelTest"/>
+    </classes>
+  </test>
+  <test thread-count="5" name = "ValidateBookAHotelInvalidCCExpYear">
+  <classes>
+     <class name = "testclassnew.logInTest"/>
+      <class name="testclassnew.searchHotelOneValidInputTest"/>
+      <class name = "testclassnew.selectHotelTest"/>
+      <class name = "testclassnew.BookAHotelInvalidCCYearTest"/>
+    </classes>
+  </test>
+  <test thread-count="5" name="BookConfirmationLastNameandRoomType">
+      <classes>
+      <class name = "testclassnew.logInTest"/>
+      <class name="testclassnew.searchHotelOneValidInputTest"/>
+      <class name = "testclassnew.selectHotelTest"/>  
+      <class name = "testclassnew.BookAHotelValidDataTest"/>
+      <class name = "testclassnew.BookHotelConfirmationLastNameDisplayCheckTest"/>
+       </classes>
+  </test>
+  
+  <test thread-count="5" name="BookAHotelErrorMessages">
+    <classes>
+      <class name = "testclassnew.logInTest"/>
+      <class name="testclassnew.searchHotelOneValidInputTest"/>
+      <class name = "testclassnew.selectHotelTest"/>  
+      <class name = "testclassnew.BookAHotelErrorMessages"/>
+      </classes>
+  </test>
+ <!-- Test -->   
+    <test thread-count="5" name="ValidEndtoEndFlow">
+      <classes>
+      <class name = "testclassnew.logInTest"/>
+      <class name="testclassnew.searchHotelOneValidInputTest"/>
+      <class name = "testclassnew.selectHotelTest"/>  
+      <class name = "testclassnew.BookAHotelValidDataTest"/>
+      <class name = "testclassnew.BookAHotelConfirmationTest"/>
+       </classes>
+  </test>
+
+</suite> <!-- Suite -->
